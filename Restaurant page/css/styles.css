@@ -1,0 +1,93 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#header-nav{
+  background-color: #edad18;
+  box-shadow: 0px 4px 10px black;
+  border: 0;
+  border-radius: 0;
+  z-index: 1;
+}
+.container{
+  height: 85px;
+}
+.navbar-brand{
+  margin-top: -15px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+  text-decoration: none;
+}
+.navbar-brand a h1{
+  font-family: 'Special Elite', cursive;
+  font-weight: 1000;
+  text-transform: uppercase;
+  color: #669900;
+  text-shadow: 1px 2px 3px black;
+}
+.navbar-brand a h1 span{
+  font-size: 1.3em;
+}
+.navbar-toggle{
+  margin-top: 25px;
+}
+.navbar-toggle .icon-bar{
+  height: 3.5px;
+}
+.toggle{
+  background-color: rgba(199, 2, 74, .7);
+  width: 100%;
+  box-shadow: 0px 4px 10px #4a001b;
+  margin-top: -15px;
+  z-index: -1;
+  transform: translateY(-100px);
+  transition: .5s ease;
+}
+.nav-active{
+  background-color: rgba(199, 2, 74, .7);
+  width: 100%;
+  box-shadow: 0px 4px 10px #4a001b;
+  margin-top: -15px;
+  z-index: -1;
+  transform: translateY(0px);
+  transition: .5s ease;
+}
+.toggle div{
+  height: 30px;
+  font-size: 1.3em;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.textbox{
+  margin-top: -150px;
+  transition: .5s ease;
+}
+.tb-active{
+  margin-top: -80px;
+  transition: .5s ease;
+}
+.textbox center h1{
+  font-size: 3em;
+  font-weight: bolder;
+  color: #fff1a3;
+}
+#text{
+  border: 1.5px solid #03fc5a;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5%;
+  transform: translate(-50%, 0%);
+  left: 50%;
+  top: 50%;
+}
+#text h2{
+  margin-top: -1%;
+  margin-bottom: 25px;
+  font-family: 'Rowdies', cursive;
+}
+#text p{
+  text-align: justify;
+  font-size: 1.3em;
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Twist of Tongue||Snehashis's Restaurant</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="pull-left" href="index.html"><h1><span>f</span>ood, LLC</h1></a>
+        </div>
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar ib1"></span>
+            <span class="icon-bar ib2"></span>
+            <span class="icon-bar ib3"></span>
+          </button>
+
+      </div><!-- .container -->
+    </nav>
+    <div class="toggle">
+      <div>Chicken</div>
+      <div>Beef</div>
+      <div>Sushi</div>
+    </div>
+    <div class="container">
+    </div>
+    <div class="container textbox">
+      <center><h1>Our Menu</h1></center>
+      <div id="text" class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <center><h2 style="color:#9ff5cd">Food System</h2></center>
+        <p>The U.S. food system is a complex network of farmers and the industries that link to them. Those links include makers of farm equipment and chemicals as well as firms that provide services to agribusinesses, such as providers of transportation and financial services. The system also includes the food marketing industries that link farms to consumers, and which include food and fiber processors, wholesalers, retailers, and foodservice establishments.<br><br>
+The term food industries covers a series of industrial activities directed at the processing, conversion, preparation, preservation and packaging of foodstuffs. The food industry today has become highly diversified, with manufacturing ranging from small, traditional, family-run activities that are highly labor intensive, to large, capital-intensive and highly mechanized industrial processes. Many food industries depend almost entirely on local agriculture or fishing.<br><br>
+Most food produced for the food industry comes from commodity crops using conventional agricultural practices. Agriculture is the process of producing food, feeding products, fiber and other desired products by the cultivation of certain plants and the raising of domesticated animals (livestock). On average, 83% of the food consumed by humans is produced using terrestrial agriculture.<br><br>
+Food processing includes the methods and techniques used to transform raw ingredients into food for human consumption. Food processing takes clean, harvested or slaughtered and butchered components and uses them to produce marketable food products. There are several different ways in which food can be produced.<br><br>
+The food industry has a large influence on consumerism. Organizations, such as The American Academy of Family Physicians (AAFP), have been criticized for accepting monetary donations from companies within the food industry, such as Coca-Cola. These donations have been criticized for creating a conflict of interest and favoring an interest such as financial gains.</p>
+      </div>
+    </div>
+  </header>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+<script type="text/javascript">
+const navSlide=()=>{
+  const menu=document.querySelector('.navbar-toggle');
+  const iconbar1=document.querySelector('.navbar-toggle .ib1');
+  const iconbar2=document.querySelector('.navbar-toggle .ib2');
+  const iconbar3=document.querySelector('.navbar-toggle .ib3');
+  const nav1=document.querySelector('.toggle');
+  const tb=document.querySelector('.textbox');
+  menu.style.borderColor = '#61122f';
+  iconbar1.style.backgroundColor = '#61122f';
+  iconbar2.style.backgroundColor = '#61122f';
+  iconbar3.style.backgroundColor = '#61122f';
+  menu.style.backgroundColor = 'transparent'
+  menu.addEventListener('click', ()=>{
+    nav1.classList.toggle('nav-active');
+    tb.classList.toggle('tb-active');
+    menu.style.backgroundColor = 'transparent'
+    menu.classList.toggle('button-active');
+
+  });
+}
+navSlide();
+</script>
+</html>
