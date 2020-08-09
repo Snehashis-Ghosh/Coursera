@@ -1,0 +1,229 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #b3ffda;
+  font-family: 'Red Rose', cursive;
+}
+/* navigation bar */
+.myNavbar{
+  background-color: #00cc00;
+  box-shadow: 0px 5px 10px black;
+  width: 100%;
+  height: 150px;
+  padding: 10px 0px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.myNavbar .logo{
+  height: 130px;
+  width: 130px;
+  margin-left: 3%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px black;
+  overflow: hidden;
+  float: left;
+}
+.myNavbar .logo img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  align-self: auto;
+}
+.myNavbar .NGO-name{
+  float: left;
+  padding: 5px;
+  margin-top: -10px;
+  box-sizing: border-box;
+  height: 130px;
+  width: auto;
+}
+.name-break{
+  display: none;
+}
+.NGO-name h1{
+  color: #cc3300;
+  text-shadow: 0px 1px 1px black;
+  font-family: 'Black Ops One', cursive;
+  text-transform: uppercase;
+}
+.NGO-name h1 span{
+  font-size: 1.5em;
+}
+.nav_links{
+  margin-top: 35px;
+  margin-right: 1%;
+  float: right;
+  display: flex;
+}
+.nav_links li{
+  list-style: none;
+}
+.nav_links li a div{
+  width: auto;
+  height: auto;
+  margin-right: 5px;
+  padding: 3px 3px 5px 5px;
+  text-align: center;
+}
+.nav_links li a{
+  text-decoration: none;
+  font-size: 1.7em;
+  color: #ffe6cc;
+  text-shadow: 0px 2px 2px black;
+}
+.nav_links li a .glyphicon-home{
+  color: #d9b38c;
+}
+.nav_links li a .glyphicon-info-sign{
+  color: #99ccff;
+}
+.nav_links li a .glyphicon-heart{
+  color: #ff4d88;
+}
+.nav_links li a .glyphicon-gift{
+  color: #bf80ff;
+}
+.nav_links li a:hover, .nav_links li a:active, a.focus:link, a.focus:visited{
+  color: #ffff66;
+}
+.nav_links li a span:hover, .nav_links li a span:active{
+  font-size: 1.3em;
+  top: -5px;
+}
+
+.menu{
+  height: 44px;
+  width: 40px;
+  padding: 5px;
+  margin-top: 35px;
+  margin-right: 10%;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+.bar1, .bar2, .bar3{
+  float: right;
+  clear: both;
+  background-color: white;
+  margin: 3px 3px;
+  box-shadow: 2px 2px 5px black;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  transition: transform 2s ease-in;
+}
+@media screen and (max-width:1015px){
+  .NGO-name h1{
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width:992px) {
+  .myNavbar{
+    height: 130px;
+  }
+  .myNavbar .logo{
+    height: 110px;
+    width: 110px;
+  }
+  .myNavbar .logo img{
+    height: 110px;
+    width: 110px;
+  }
+  .NGO-name h1{
+    font-size: 1.8em;
+  }
+  .nav_links{
+    right: 0px;
+    height: auto;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    transform: translateY(-123%);
+    transition: transform .2s ease-in;
+  }
+  .menu{
+    display: block;
+  }
+  .nav_links li{
+    width: 100%;
+  }
+  .nav_links li a div{
+    height: 41px;
+    width: 100%;
+    background-color: #009933;
+    border-bottom: 1px solid #006622;
+  }
+  .nav_links li a div span{
+    margin-right: 6px;
+  }
+  .home, .abt, .login, .donate{
+    transition: transform .5s ease-in;
+  }
+}
+@media screen and (max-width:700px) {
+  .myNavbar .logo{
+    margin-top: 15px;
+    height: 90px;
+    width: 90px;
+  }
+  .myNavbar .logo img{
+    height: 90px;
+    width: 90px;
+  }
+  .NGO-name h1{
+    margin-top: 40px;
+    font-size: 1.3em;
+  }
+  .NGO-name p{
+    font-size: .8em;
+  }
+  .menu{
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width:400px){
+  .myNavbar .logo{
+    margin-top: 10px;
+  }
+  .name-break{
+    display: block;
+  }
+  .NGO-name h1{
+    margin-top: 25px;
+    font-size: 1.5em;
+  }
+  .NGO-name p{
+    font-size: .5em;
+  }
+}
+.menu-active1{
+  width: 100%;
+  border-radius: 3px;
+  transition: transform .8s ease-in;
+}
+.menu-active2{
+  width: 75%;
+  border-radius: 3px;
+  transition: transform .8s ease-in;
+}
+.home-active{
+  transform: translateY(170px);
+  transition: transform .3s ease-in;
+}
+.abt-active{
+  transform: translateY(255px);
+  transition: transform .5s ease-in;
+}
+.login-active{
+  transform: translateY(340px);
+  transition: transform .7s ease-in;
+}
+.donate-active{
+  transform: translateY(425px);
+  transition: transform .9s ease-in;
+}
