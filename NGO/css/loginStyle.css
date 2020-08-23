@@ -1,0 +1,194 @@
+*{margin: 0;padding: 0;}
+body{
+
+  font-family: 'Red Rose', cursive;
+}
+.loading{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content{display: none;}
+.myNavbar{
+  width: 100%;
+  height: 150px;
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+.myNavbar .logo{
+  height: 130px;
+  width: 130px;
+  margin-left: 3%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px black;
+  overflow: hidden;
+  float: left;
+}
+.myNavbar .logo img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  align-self: auto;
+}
+.myNavbar .NGO-name{
+  float: left;
+  padding: 5px;
+  margin-top: -10px;
+  box-sizing: border-box;
+  height: 130px;
+  width: auto;
+}
+.name-break{
+  display: none;
+}
+.NGO-name h1{
+  color: #cc3300;
+  text-shadow: 0px 1px 1px black;
+  font-family: 'Black Ops One', cursive;
+  text-transform: uppercase;
+}
+.NGO-name h1 span{
+  font-size: 1.5em;
+}
+.container{height: 70vh;}
+.form{
+  height: 450px;
+  width: 340px;
+  padding: 10px 0 10px 0;
+  position: relative;
+  margin-top: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.btns{
+  height: 30px;
+  width: 200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: inset 0 0 20px black, 0 0 20px grey;
+  border-radius: 30px;
+  overflow:hidden;
+}
+.btns #btn_bg{
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100px;
+  border-radius: 30px;
+  border: .5px solid #26004d;
+  background-image: linear-gradient(to right,#9900ff,#cc33ff);
+  transition: .5s;
+}
+.btns button{
+  width: 98px;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1.3em;
+}
+form{padding: 0 10% 0 10%;}
+form p{font-size: 1.2em;color: #f5ccff;}
+input{
+  width: 100%;
+  padding: 5px 0;
+  margin: -5px 0 10px 0;
+  color: #00cc66;
+  border-left: 0px;
+  border-top: 0;
+  border-bottom: 1.5px solid #ccffeb;
+  border-right: 0;
+  outline: none;
+  background: transparent;
+}
+.login .cb{margin: 20px 10px 0px 0;width: auto;}
+.login span{font-size: 1.1em;color: #99ffcc;}
+form button{
+  margin: 20px 10% 0 10%;
+  width: 80%;
+  height: 30px;
+  color: white;
+  font-size: 1.3em;
+  border-radius: 30px;
+  border: .5px solid #26004d;
+  background-image: radial-gradient(#cc33ff,#9900ff);
+}
+form button:hover{
+  background-image: radial-gradient(#cc00ff,#cc33ff);
+}
+#rg button{margin-top: 5px;}
+#lg{
+  position: relative;
+  left: 0%;
+  top: 30px;
+  transition: .5s;
+}
+#rg{
+  position: relative;
+  left: -110%;
+  top: -220px;
+  transition: .5s;
+}
+
+
+@media screen and (max-width:992px) {
+  .myNavbar{
+    height: 130px;
+  }
+  .myNavbar .logo{
+    height: 110px;
+    width: 110px;
+  }
+  .myNavbar .logo img{
+    height: 110px;
+    width: 110px;
+  }
+}
+@media screen and (max-width:700px) {
+  .loading img{height: 80px; width: 80px;}
+  .myNavbar .logo{
+    margin-top: 15px;
+    height: 90px;
+    width: 90px;
+  }
+  .myNavbar .logo img{
+    height: 90px;
+    width: 90px;
+  }
+  .NGO-name h1{
+    margin-top: 40px;
+    font-size: 1.3em;
+  }
+  .NGO-name p{
+    font-size: .8em;
+  }
+}
+@media screen and (max-width:400px){
+  .myNavbar .logo{
+    margin-top: 10px;
+  }
+  .name-break{
+    display: block;
+  }
+  .NGO-name h1{
+    margin-top: 25px;
+    font-size: 1.5em;
+  }
+  .NGO-name p{
+    font-size: .5em;
+  }
+  .form{width:100%;}
+}
