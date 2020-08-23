@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/loginStyle.css">
+    <title>Unity for Humanity/login</title>
+  </head>
+  <body>
+
+    <div class="main-content">
+      <img src="images/loginBG.jpg" style="position:absolute;width:100vw; height:100vh;z-index:-5;">
+    <nav class="myNavbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
+      </div>
+      <div class="NGO-name">
+            <a href="index.html" style="text-decoration : none;"><h1><span>U</span>nity for <br class="name-break"><span>H</span>umanity</h1></a>
+            <p style="margin-top: -13px;margin-left: 4px;color:#336600"><I>Non-Governmental Organization</I></p>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="form">
+        <div class="btns">
+          <div id="btn_bg"></div>
+          <button type="button" name="log" onclick="Login()">Login</button>
+          <button type="button" name="reg" onclick="Register()">Sign Up</button>
+        </div>
+        <form id="lg" class="login" action="index.html" method="post">
+            <p>Email</p>
+            <input type="mail" name="mailID" value="" placeholder="Enter mail ID" required>
+            <p>Password</p>
+            <input type="password" name="password" value="" placeholder="Enter password" required>
+            <br><input type="checkbox" class="cb"><span>I'm an Admin</span>
+            <br><button type="submit" name="lg-submit">Login</button>
+        </form>
+        <form id="rg" class="register" action="index.html" method="post">
+            <p>Name</p>
+            <input type="text" name="Uname" value="" placeholder="Enter full name" required>
+            <p>Email</p>
+            <input type="mail" name="mailID" value="" placeholder="Enter mail ID" required>
+            <p>Address</p>
+            <input type="text" name="Uaddress" value="" placeholder="Enter Address" required>
+            <p>Phone Number</p>
+            <input type="tel" name="Uphone" value="" placeholder="Enter phone number" required>
+            <p>Password</p>
+            <input type="password" name="password" value="" placeholder="Create password" required>
+            <br><button type="submit" name="rg-submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="loading">
+      <img src="images/load.gif" alt="Loading">
+    </div>
+
+    <script type="text/javascript">
+      $(window).on("load", function(){
+        $(".loading").fadeOut('slow');
+        $(".main-content").fadeIn('slow');
+      });
+
+      var lg = document.getElementById("lg");
+      var rg = document.getElementById("rg");
+      var btn = document.getElementById("btn_bg");
+
+      function Login(){
+        lg.style.left="0%";
+        rg.style.left="-110%";
+        btn.style.left ="0px";
+      }
+      function Register(){
+        lg.style.left="100%";
+        rg.style.left="0%";
+        btn.style.left ="100px";
+      }
+
+    </script>
+
+  </body>
+</html>
