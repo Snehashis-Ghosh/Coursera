@@ -1,0 +1,92 @@
+[
+  {
+    "question_name":"1",
+    "question": "HTML stands for?",
+    "option1": "Hyper Text Markup Language",
+    "option2": "High Text Markup Language",
+    "option3": "Hyper Tabuler Markup Language",
+    "option4": "None of these",
+    "answer": "Hyper Text Markup Language"
+  },
+  {
+    "question_name":"2",
+    "question": "Which of these tag is used to mark a begining of a paragraph?",
+    "option1":"&lt td &gt",
+    "option2":"&lt br &gt",
+    "option3":"&lt p &gt",
+    "option4":"&lt tr &gt",
+    "answer":"&lt p &gt"
+  },
+  {
+    "question_name":"3",
+    "question": "From which tag descriptive list starts?",
+    "option1":"&lt ll &gt",
+    "option2":"&lt dd &gt",
+    "option3":"&lt dl &gt",
+    "option4":"&lt ds &gt",
+    "answer":"&lt dl &gt"
+  },
+  {
+    "question_name":"4",
+    "question": "Correct HTML tag for largest heading is-",
+    "option2":"&lt head &gt",
+    "option1":"&lt h6 &gt",
+    "option3":"&lt heading &gt",
+    "option4":"&lt h1 &gt",
+    "answer":"&lt h1 &gt"
+  },
+  {
+    "question_name":"5",
+    "question":"The attribute of <form> tag is-",
+    "option1":"Method",
+    "option2":"Action",
+    "option3":"Both (a) & (b)",
+    "option4":"None of these",
+    "answer":"Both (a) & (b)"
+  },
+  {
+    "question_name":"6",
+    "question":"Markup tags tell the web browser-",
+    "option1":"How to organise the page",
+    "option2":"How to display the page",
+    "option3":"How to display message box on page",
+    "option4":"None of these",
+    "answer":"How to display the page"
+  },
+  {
+    "question_name":"7",
+    "question": "www is based on which model?",
+    "option1":"Local-server",
+    "option2":"client-server",
+    "option3":"3-tire",
+    "option4":"None of these",
+    "answer":"client-server"
+  },
+  {
+    "question_name":"8",
+    "question":"What are empty elements and is it valid?",
+    "option1":"No, there is no such term",
+    "option2":"Empty element is element with no data",
+    "option3":"No, it is not valid to use empty element",
+    "option4":"None of these",
+    "answer":"Empty element is element with no data"
+  },
+  {
+    "question_name":"9",
+    "question":"Which of the following attributes of text box control allow to limit the maximum charecter?",
+    "option1":"Size",
+    "option2":"Len",
+    "option3":"Maxlength",
+    "option4":"All of these",
+    "answer":"Maxlength"
+  },
+  {
+    "question_name":"10",
+    "question":"HTML is subset of-",
+    "option1":"SGMT",
+    "option2":"SGML",
+    "option3":"SGMD",
+    "option4":"None of these",
+    "answer":"SGML"
+  }
+]
