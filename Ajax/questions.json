@@ -11,29 +11,29 @@
   {
     "question_name":"2",
     "question": "Which of these tag is used to mark a begining of a paragraph?",
-    "option1":"&lt td &gt",
-    "option2":"&lt br &gt",
-    "option3":"&lt p &gt",
-    "option4":"&lt tr &gt",
-    "answer":"&lt p &gt"
+    "option1":"td",
+    "option2":"br",
+    "option3":"p",
+    "option4":"tr",
+    "answer":"p"
   },
   {
     "question_name":"3",
     "question": "From which tag descriptive list starts?",
-    "option1":"&lt ll &gt",
-    "option2":"&lt dd &gt",
-    "option3":"&lt dl &gt",
-    "option4":"&lt ds &gt",
-    "answer":"&lt dl &gt"
+    "option1":"ll",
+    "option2":"dd",
+    "option3":"dl",
+    "option4":"ds",
+    "answer":"dl"
   },
   {
     "question_name":"4",
     "question": "Correct HTML tag for largest heading is-",
-    "option2":"&lt head &gt",
-    "option1":"&lt h6 &gt",
-    "option3":"&lt heading &gt",
-    "option4":"&lt h1 &gt",
-    "answer":"&lt h1 &gt"
+    "option2":"head",
+    "option1":"h6",
+    "option3":"heading",
+    "option4":"h1",
+    "answer":"h1"
   },
   {
     "question_name":"5",
