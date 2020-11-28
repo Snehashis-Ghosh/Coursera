@@ -1,3 +1,4 @@
+<script type="text/javascript>
 const ajax = new XMLHttpRequest();
 ajax.open("GET", "questions.json", true);
 
@@ -27,3 +28,4 @@ ajax.onload = function(){
 }
 
 ajax.send();
+</script>
